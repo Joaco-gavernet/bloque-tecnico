@@ -9,7 +9,7 @@ const Testimonies = () => {
         <div className='boxes'>
           <img src='' alt='' className='boxes__img' />
           <p className='boxes__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur sapien eget ex pharetra, vitae iaculis elit scelerisque. Duis sit amet finibus nibh, at ornare tellus.</p>
-          <h7 className='boxes__title'>Lorem ipsum |</h7>
+          <h6 className='boxes__title'>Lorem ipsum |</h6>
           <img src='' alt='' className='boxes__logo' />
         </div>
       </div>
