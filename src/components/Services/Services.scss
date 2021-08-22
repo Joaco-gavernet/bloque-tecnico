@@ -1,0 +1,58 @@
+@import '../../scss/base.scss';
+
+.home__services {
+  padding: 80px 0 120px 0;
+  @include flex(column, center, center);
+
+  .services__title {
+    @include font($font-h3, bold, none);
+    color: $color-celeste;
+  }
+
+  .services__text {
+    @include font($font-xm, light, none);
+    color: $color-oscuro;
+    margin-top: 50px;
+  }
+  
+  .services__boxes {
+    width: 90%;
+    margin-top: 90px;
+    @include flex(row, space-evenly, center);
+  }
+
+  .boxes {
+    width: 400px;
+    height: 485px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    &__img {
+      width: 100%;
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.07);
+        opacity: 0.8;
+      }
+    }
+
+    &__title {
+      @include font($font-h4, bold, none);
+      position: absolute;
+      z-index: 1;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%);
+      color: $color-claro;
+    }
+
+    &__button {
+
+    }
+
+  }
+
+}

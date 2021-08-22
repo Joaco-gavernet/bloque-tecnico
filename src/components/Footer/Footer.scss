@@ -1,0 +1,33 @@
+@import '../../scss/base.scss';
+
+.footer {
+  padding: 40px 95px;
+  height: 190px;
+  background-color: $color-celeste;
+  color: $color-claro;
+  @include flex(row, space-between, center);
+
+  .media {
+    &__text {
+      @include font(13px, normal, none);
+      margin-bottom: .5rem;
+    }
+
+    &__img:last-child {
+      margin-left: .5rem;
+    }
+  }
+
+  .contact {
+    @include flex(row, space-evenly, center);
+    min-width: 800px;
+    
+    &__item {
+      @include flex(row, center, center);
+
+      .item__text {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

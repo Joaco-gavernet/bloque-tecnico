@@ -1,0 +1,117 @@
+@import '../../scss/base.scss';
+
+.home__hero {
+  
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .slides {
+    width: 300%;
+    height: inherit;
+    display: flex;
+
+    > input {
+      display: none;
+    }
+
+  }
+
+  .slide {
+    width: 33.33%;
+    transition: 2s;
+    position: relative;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .info-box {
+      position: absolute;
+      top: 250px;
+      left: 200px;
+      max-width: 750px;
+      color: $color-claro;
+
+      &__title {
+        @include font($font-h2, bold, none);
+        min-height: 200px;
+      }
+      
+      &__text {
+        @include font($font-m, light, none);
+        min-height: 200px;
+      }
+
+    }
+  }
+
+  .navigation-manual {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+
+  .manual-btn {
+    width: 80px;
+    height: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: lightcyan;
+
+    &:hover {
+      background-color: $color-verde;
+    }
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -33.33%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -66.66%;
+  }
+
+  // .navigation-auto {
+  //   position: absolute;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-bottom: 0px;
+  //   z-index: 2;
+  //   pointer-events: none;
+
+
+  //   > div {
+  //     width: 50px;
+  //     height: 20px;
+  //     border-radius: 10px;
+  //     cursor: pointer;
+  //     transition: 1s;
+  //     background-color: gray;
+  //   }
+
+  //   > div:not(:last-child) {
+  //     margin-right: 40px;
+  //   }
+  // }
+
+  // #radio1:checked ~ .navigation-auto .auto-btn1 {
+  //   background-color: red;
+  // }
+  // #radio2:checked ~ .navigation-auto .auto-btn2 {
+  //   background-color: red;
+  // }
+  // #radio3:checked ~ .navigation-auto .auto-btn3 {
+  //   background-color: red;
+  // }
+
+}

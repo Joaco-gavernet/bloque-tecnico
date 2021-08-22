@@ -1,0 +1,16 @@
+@import "../../scss/base.scss";
+
+.NavBar {
+  background-color: #0574C1;
+  color: $color-claro;
+  padding: 32px 95px;
+  @include flex(row, space-between, center);
+
+  .hero__NavBar {
+    @include flex(row, center, center);
+    
+    > p:not(:first-child) {
+      margin-left: 28px;
+    }
+  }
+}

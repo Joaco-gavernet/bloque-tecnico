@@ -1,7 +1,12 @@
 import React from 'react';
 
+
+// Styles
+import './Examples.scss';
+
+
 const Examples = () => {
-  return ( 
+  return (
     <section className='home__examples'>
       <h5 className='examples__title'>Con vasta experiencia y conocimientos en el área eléctrica sumamos horas trabajos realizados a lo largo de nuestra trayectoria</h5>
       <div className='examples__details'>
@@ -23,7 +28,55 @@ const Examples = () => {
         </div>
       </div>
 
-      {/* elements boxes */}
+      {/* container */}
+      <div className='container'>
+        <h4 className='container__title'>Conozca los ultimos proyectos en que estuvimos trabajando </h4>
+        {/* slide-view */}
+        <div className='slide-view'>
+          {/* slides */}
+          <div className='slides'>
+            <div className='slide first'>
+              <img src='https://place-hold.it/510x380' alt='' />
+              <div className='info-box'>
+                <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
+                <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
+                <div className='navigation-manual'>
+                  <img src='assets/left-row-inactive.png' alt='' />
+                  <img src='assets/right-row-inactive.png' alt='' />
+                </div>
+              </div>
+            </div>
+            <div className='slide'>
+              <img src='https://place-hold.it/510x380' alt='' />
+              <div className='info-box'>
+                <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
+                <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
+                <div className='navigation-manual'>
+                  <label htmlFor='radio1' className='manual-btn' />
+                  <label htmlFor='radio2' className='manual-btn' />
+                </div>
+              </div>
+            </div>
+            <div className='slide'>
+              <img src='https://place-hold.it/510x380' alt='' />
+              <div className='info-box'>
+                <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
+                <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
+                <div className='navigation-manual'>
+                  <label htmlFor='radio1' className='manual-btn' />
+                  <label htmlFor='radio2' className='manual-btn' />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* end slides */}
+        </div>
+        {/* end slide-view */}
+        <button className='container__button'>
+          Ver más
+        </button>
+      </div>
+      {/* end container */}
     </section>
   );
 }

@@ -1,0 +1,43 @@
+@import '../../scss/base.scss';
+
+.home__join {
+  background-image: 'url(assets/hace-parte-bkg.png)';
+  position: relative;
+
+
+  .join__image {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .join__box {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: $color-oscuro;
+    @include flex(column, center, center);
+    max-width: 1000px;
+
+    .box__title {
+      @include font($font-h3, normal, none);
+      color: $color-celeste;
+    }
+
+    .box__text {
+      @include font($font-xm, normal, none);
+      color: $color-oscuro;
+      margin-top: 40px;
+    }
+
+    .box__button {
+      background-color: $color-verde;
+      color: $color-claro;
+      margin-top: 40px;
+      border-radius: 5px;
+      @include font(20px, normal, none);
+    }
+
+  }
+
+}

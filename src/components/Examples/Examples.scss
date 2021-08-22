@@ -1,0 +1,151 @@
+@import '../../scss/base.scss';
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+
+.home__examples {
+  padding: 60px 0;
+  @include flex(column, center, center);
+  background-color: $color-gris;
+
+  &:hover {
+    .details:nth-child(1) {
+      --num: 425;
+    }
+
+    .details:nth-child(2) {
+      --num: 231;
+    }
+
+    .details:nth-child(3) {
+      --num: 2640;
+    }
+
+    .details:nth-child(4) {
+      --num: 1589;
+    }
+  }
+
+  .examples__title {
+    @include font(28px, bold, none);
+    color: $color-celeste;
+    max-width: 1000px;
+    text-align: center;
+  }
+
+  .examples__details {
+    max-width: 1000px;
+    @include flex(normal, center, center);
+
+    .details {
+      @include flex(column, space-evenly, center);
+      min-height: 150px;
+      
+      transition: --num 1s;
+      counter-reset: num var(--num);
+
+
+      &::before {
+        content: counter(num);
+        @include font($font-h2, bold, none);
+        background: -webkit-linear-gradient($color-celeste, $color-verde);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &:not(:first-child) {
+        margin-left: 90px;
+      }
+
+      &__numbers {
+        // @include font($font-h2, bold, none);
+        // background: -webkit-linear-gradient($color-celeste, $color-verde);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+
+        display: none;
+      }
+
+      &__text {
+        @include font($font-m, normal, none);
+      }
+    }
+  }
+
+  .container {
+    padding: 60px 105px;
+    background-color: $color-claro;
+    margin-top: 70px;
+    @include flex(column, center, center);
+    
+    
+    &__title {
+      @include font($font-l, normal, none);
+      color: $color-gris-oscuro;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .slide-view {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .slides {
+      width: 300%;
+      display: flex;
+      background-color: $color-gris;
+      margin-top: 40px;
+
+      .first {
+        // margin-left: -100%;
+      }
+
+      .slide {
+        @include flex(row, space-evenly, center);
+
+        .info-box {
+          padding: 60px;
+          width: 100%;
+
+          &__title {
+            @include font($font-xm, bold, none);
+            min-height: 50px;
+          }
+
+          &__text {
+            @include font($font-m, normal, none);
+            margin-top: 20px;
+            min-height: 100px;
+          }
+
+          .navigation-manual {
+            width: 150px;
+            @include flex(row, space-evenly, center);
+
+            > img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .container__button {
+      background-color: $color-verde;
+      color: $color-claro;
+      margin-top: 40px;
+      width: 190px;
+      border-radius: 10px;
+      @include font(20px, bold, none);
+    }
+  }
+
+}
+
