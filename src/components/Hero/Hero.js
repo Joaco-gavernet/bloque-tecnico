@@ -9,18 +9,15 @@ const Hero = () => {
 
 
   useEffect(() => {
-
     var counter = 1;
-    console.log('remember to itarete the counter', counter);
-    // setInterval(() => {
-    //   document.getElementById('radio' + counter).checked = true;
-    //   if (counter == 3) {
-    //     counter = 1;
-    //   } else {
-    //     counter++;
-    //   }
-    // }, 5000);
-
+    setInterval(() => {
+      document.getElementById('radio' + counter).checked = true;
+      if (counter == 3) {
+        counter = 1;
+      } else {
+        counter++;
+      }
+    }, 5000);
   }, [])
 
 
@@ -71,11 +68,11 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <div className='navigation-manual'>
+      <div className='navigation-manual'>
         <label htmlFor='radio1' className='manual-btn btn1' />
         <label htmlFor='radio2' className='manual-btn' />
         <label htmlFor='radio3' className='manual-btn' />
-      </div> */}
+      </div>
 
     </section>
   );

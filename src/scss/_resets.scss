@@ -3,6 +3,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::after, *::before {
@@ -89,7 +90,7 @@ ul {
 button, .button {
   display: inline-block;
   padding: 0.875rem 1.875rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   border: 0;
   cursor: pointer;
   background-color: $color-claro;

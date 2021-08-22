@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 // Styles
@@ -7,9 +7,23 @@ import './Footer.scss';
 
 const Footer = () => {
 
+
+  useEffect(() => {
+
+    const footer__logo = document.querySelector('.footer__logo');
+
+    footer__logo.addEventListener('click', () => {
+      document.querySelector('.home__hero').scrollIntoView({
+        behavior: 'smooth'
+      });
+    })
+
+  }, [])
+
+
   return (
     <div className='footer'>
-      <img src='assets/logo_bloque-white-header.png' alt='' className='footer__logo' />
+      <img src='assets/logo_bloque-white-header.png' alt='Logo' className='footer__logo' />
 
       <div className='media'>
         <p className='media__text'>Seguinos en las redes:</p>

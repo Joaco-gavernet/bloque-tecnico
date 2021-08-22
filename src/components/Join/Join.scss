@@ -13,11 +13,14 @@
   .join__box {
     position: absolute;
     top: 50%;
-    left: 20%;
+    left:0;
+    right:0;
     transform: translateY(-50%);
+    margin-left:auto;
+    margin-right:auto;
     color: $color-oscuro;
     @include flex(column, center, center);
-    max-width: 1000px;
+    max-width: 62.5rem;
 
     .box__title {
       @include font($font-h3, normal, none);
@@ -27,13 +30,13 @@
     .box__text {
       @include font($font-xm, normal, none);
       color: $color-oscuro;
-      margin-top: 40px;
+      margin-top: 2.5rem;
     }
 
     .box__button {
       background-color: $color-verde;
       color: $color-claro;
-      margin-top: 40px;
+      margin-top: 2.5rem;
       border-radius: 5px;
       @include font(20px, normal, none);
     }

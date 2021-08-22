@@ -8,7 +8,7 @@
 
 
 .home__examples {
-  padding: 60px 0;
+  padding: 3.75rem 0;
   @include flex(column, center, center);
   background-color: $color-gris;
 
@@ -31,19 +31,19 @@
   }
 
   .examples__title {
-    @include font(28px, bold, none);
+    @include font(1.75rem, bold, none);
     color: $color-celeste;
-    max-width: 1000px;
+    max-width: 62.5rem;
     text-align: center;
   }
 
   .examples__details {
-    max-width: 1000px;
+    max-width: 62.5rem;
     @include flex(normal, center, center);
 
     .details {
       @include flex(column, space-evenly, center);
-      min-height: 150px;
+      min-height: 9.375rem;
       
       transition: --num 1s;
       counter-reset: num var(--num);
@@ -79,9 +79,9 @@
   }
 
   .container {
-    padding: 60px 105px;
+    padding: 3.75rem 105px;
     background-color: $color-claro;
-    margin-top: 70px;
+    margin-top: 4.375rem;
     @include flex(column, center, center);
     
     
@@ -101,7 +101,7 @@
       width: 300%;
       display: flex;
       background-color: $color-gris;
-      margin-top: 40px;
+      margin-top: 2.5rem;
 
       .first {
         // margin-left: -100%;
@@ -111,12 +111,12 @@
         @include flex(row, space-evenly, center);
 
         .info-box {
-          padding: 60px;
+          padding: 3.75rem;
           width: 100%;
 
           &__title {
             @include font($font-xm, bold, none);
-            min-height: 50px;
+            min-height: 3.125rem;
           }
 
           &__text {
@@ -126,7 +126,7 @@
           }
 
           .navigation-manual {
-            width: 150px;
+            width: 9.375rem;
             @include flex(row, space-evenly, center);
 
             > img {
@@ -140,8 +140,8 @@
     .container__button {
       background-color: $color-verde;
       color: $color-claro;
-      margin-top: 40px;
-      width: 190px;
+      margin-top: 2.5rem;
+      width: 11.875rem;
       border-radius: 10px;
       @include font(20px, bold, none);
     }

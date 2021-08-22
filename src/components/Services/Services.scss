@@ -12,7 +12,7 @@
   .services__text {
     @include font($font-xm, light, none);
     color: $color-oscuro;
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
   
   .services__boxes {

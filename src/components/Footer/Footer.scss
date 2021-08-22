@@ -1,11 +1,15 @@
 @import '../../scss/base.scss';
 
 .footer {
-  padding: 40px 95px;
-  height: 190px;
+  padding: 2.5rem 95px;
+  height: 11.875rem;
   background-color: $color-celeste;
   color: $color-claro;
   @include flex(row, space-between, center);
+
+  &__logo {
+    cursor: pointer;
+  }
 
   .media {
     &__text {

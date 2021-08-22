@@ -41,8 +41,8 @@ const Examples = () => {
                 <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
                 <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
                 <div className='navigation-manual'>
-                  <img src='assets/left-row-inactive.png' alt='' />
-                  <img src='assets/right-row-inactive.png' alt='' />
+                  <img src='assets/left-row-inactive.png' alt='Flecha' />
+                  <img src='assets/right-row-inactive.png' alt='Flecha' />
                 </div>
               </div>
             </div>

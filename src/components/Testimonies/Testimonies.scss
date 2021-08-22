@@ -1,7 +1,7 @@
 @import '../../scss/base.scss';
 
 .home__testimonies {
-  padding: 70px 0;
+  padding: 4.375rem 0;
   background: linear-gradient(180deg, $color-celeste 0%, $color-verde 100%);
   color: $color-claro;
   @include flex(column, center, center);
@@ -14,13 +14,13 @@
 
   .testimonies__text {
     @include font($font-xm, normal, none);
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
 
   .testimonies__boxes {
     min-width: 100%;
     @include flex(row, center, center);
-    margin: 70px 0;
+    margin: 4.375rem 0;
     padding-left: 10rem;
     overflow: hidden;
 
@@ -28,7 +28,7 @@
       width: 510px;
       background-color: $color-claro;
       border-radius: 10px;
-      padding: 20px 50px;
+      padding: 20px 3.125rem;
       color: $color-oscuro;
       margin-right: 20px;
 
