@@ -42,28 +42,34 @@ const Testimonies = () => {
       <Swiper
         slidesPerView={3}
         loop={true}
-        // spaceBetween={50}
-        // pagination={{ "clickable": true }}
-        // navigation={true}
-        className=''
+      // spaceBetween={50}
+      // pagination={{ "clickable": true }}
+      // navigation={true}
+      // className='testimonies__boxes'
       >
-        <SwiperSlide className='example'>
-          <img src='' alt='Comillas' className='boxes__img' />
+        <SwiperSlide className='boxes'>
+          {/* <img src='' alt='Comillas' className='boxes__img' />
           <p className='boxes__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur sapien eget ex pharetra, vitae iaculis elit scelerisque. Duis sit amet finibus nibh, at ornare tellus.</p>
           <h6 className='boxes__title'>Lorem ipsum |</h6>
-          <img src='' alt='Logo' className='boxes__logo' />
+          <img src='' alt='Logo' className='boxes__logo' /> */}
+
+          <p>Examples</p>
         </SwiperSlide>
-        <SwiperSlide className=''>
-          <img src='' alt='Comillas' className='boxes__img' />
+        <SwiperSlide className='boxes'>
+          {/* <img src='' alt='Comillas' className='boxes__img' />
           <p className='boxes__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur sapien eget ex pharetra, vitae iaculis elit scelerisque. Duis sit amet finibus nibh, at ornare tellus.</p>
           <h6 className='boxes__title'>Lorem ipsum |</h6>
-          <img src='' alt='Logo' className='boxes__logo' />
+          <img src='' alt='Logo' className='boxes__logo' /> */}
+
+          <p>Examples</p>
         </SwiperSlide>
-        <SwiperSlide className=''>
-          <img src='' alt='Comillas' className='boxes__img' />
+        <SwiperSlide className='boxes'>
+          {/* <img src='' alt='Comillas' className='boxes__img' />
           <p className='boxes__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur sapien eget ex pharetra, vitae iaculis elit scelerisque. Duis sit amet finibus nibh, at ornare tellus.</p>
           <h6 className='boxes__title'>Lorem ipsum |</h6>
-          <img src='' alt='Logo' className='boxes__logo' />
+          <img src='' alt='Logo' className='boxes__logo' /> */}
+
+          <p>Examples</p>
         </SwiperSlide>
       </Swiper>
     </section>
