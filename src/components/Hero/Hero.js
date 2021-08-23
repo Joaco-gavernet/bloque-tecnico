@@ -12,7 +12,7 @@ const Hero = () => {
     var counter = 1;
     setInterval(() => {
       document.getElementById('radio' + counter).checked = true;
-      if (counter == 3) {
+      if (counter === 3) {
         counter = 1;
       } else {
         counter++;
