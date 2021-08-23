@@ -19,27 +19,32 @@
 
   .testimonies__boxes {
     min-width: 100%;
+    overflow: hidden;
     @include flex(row, center, center);
     margin: 4.375rem 0;
     padding-left: 10rem;
-    overflow: hidden;
 
-    > .boxes {
-      width: 510px;
-      background-color: $color-claro;
-      border-radius: 10px;
-      padding: 20px 3.125rem;
-      color: $color-oscuro;
-      margin-right: 20px;
-
-      &__text {
-        @include font($font-m, normal, none);
-      }
-
-      &__title {
-        @include font($font-xm, bold, none);
-      }
-    }
   }
+  
+}
 
+.boxes {
+  width: 510px;
+  // background-color: $color-claro;
+  // border-radius: 10px;
+  // padding: 20px 3.125rem;
+  // color: $color-oscuro;
+  // margin-right: 20px;
+
+  // &__text {
+  //   @include font($font-m, normal, none);
+  // }
+
+  // &__title {
+  //   @include font($font-xm, bold, none);
+  // }
+}
+
+.example {
+  width: 510px;
 }
