@@ -82,6 +82,9 @@
     padding: 3.75rem 105px;
     background-color: $color-claro;
     margin-top: 4.375rem;
+    -webkit-box-shadow: -1px 5px 20px -2px #000000;
+    box-shadow: -1px 5px 20px -2px #000000;
+    border-radius: 10px;
     @include flex(column, center, center);
     
     

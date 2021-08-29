@@ -36,7 +36,7 @@ const Examples = () => {
           {/* slides */}
           <div className='slides'>
             <div className='slide first'>
-              <img src='https://place-hold.it/510x380' alt='' />
+              <img src='assets/galery-1.png' alt='' />
               <div className='info-box'>
                 <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
                 <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
