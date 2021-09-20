@@ -16,19 +16,19 @@ const Services = () => {
         <div className='boxes'>
           <img src='assets/residencial-img.png' alt='' className='boxes__img' />
           <h4 className='boxes__title' alt=''>Residencial</h4>
-          <button className='boxes__button'></button>
+          <img src='assets/plus-icon.png' alt='' className='boxes__button'></img>
         </div>
 
         <div className='boxes'>
           <img src='assets/comercial-img.png' alt='' className='boxes__img' />
           <h4 className='boxes__title' alt=''>Comercial</h4>
-          <button className='boxes__button'></button>
+          <img src='assets/plus-icon.png' alt='' className='boxes__button'></img>
         </div>
 
         <div className='boxes'>
           <img src='assets/industrial-img.png' alt='' className='boxes__img' />
           <h4 className='boxes__title' alt=''>Industrial</h4>
-          <button className='boxes__button'></button>
+          <img src='assets/plus-icon.png' alt='' className='boxes__button'></img>
         </div>
       </div>
     </section>

@@ -24,9 +24,13 @@
 
     > p {
       cursor: pointer;
+      padding: 5px;
+      border-radius: 5px;
+      transition: all ease-in-out 500ms;
 
       &:hover {
         color: $color-verde;
+        background-color: #3D686F;
       }
 
     }

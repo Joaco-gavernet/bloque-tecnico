@@ -28,6 +28,11 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    transition: all 3s;
+    
+    &:hover .boxes__button {
+      opacity: 1;
+    }
 
     &__img {
       width: 100%;
@@ -48,9 +53,14 @@
       transform: translate(-50%);
       color: $color-claro;
     }
-
+    
     &__button {
-
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 2;
+      opacity: 0;
     }
 
   }

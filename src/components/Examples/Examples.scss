@@ -10,7 +10,7 @@
 .home__examples {
   padding: 3.75rem 0;
   @include flex(column, center, center);
-  background-color: $color-gris;
+  background-color: $color-gris-claro;
 
   &:hover {
     .details:nth-child(1) {
@@ -103,15 +103,16 @@
     .slides {
       width: 300%;
       display: flex;
-      background-color: $color-gris;
+      background-color: $color-gris-claro;
       margin-top: 2.5rem;
 
       .first {
-        // margin-left: -100%;
+        transition: all 1s;
       }
 
       .slide {
         @include flex(row, space-evenly, center);
+        width: 33.33%;
 
         .info-box {
           padding: 3.75rem;

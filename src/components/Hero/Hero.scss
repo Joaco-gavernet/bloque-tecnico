@@ -79,39 +79,4 @@
   #radio3:checked ~ .first {
     margin-left: -66.66%;
   }
-
-  // .navigation-auto {
-  //   position: absolute;
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   margin-bottom: 0px;
-  //   z-index: 2;
-  //   pointer-events: none;
-
-
-  //   > div {
-  //     width: 3.125rem;
-  //     height: 20px;
-  //     border-radius: 10px;
-  //     cursor: pointer;
-  //     transition: 1s;
-  //     background-color: gray;
-  //   }
-
-  //   > div:not(:last-child) {
-  //     margin-right: 2.5rem;
-  //   }
-  // }
-
-  // #radio1:checked ~ .navigation-auto .auto-btn1 {
-  //   background-color: red;
-  // }
-  // #radio2:checked ~ .navigation-auto .auto-btn2 {
-  //   background-color: red;
-  // }
-  // #radio3:checked ~ .navigation-auto .auto-btn3 {
-  //   background-color: red;
-  // }
-
 }
