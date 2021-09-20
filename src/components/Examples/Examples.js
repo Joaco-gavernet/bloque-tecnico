@@ -8,28 +8,43 @@ import './Examples.scss';
 const Examples = () => {
 
 
-  const [firstStyle, setFirstStyle] = useState({ marginLeft: '0%' })
+  const [margin, setMargin] = useState('0');
 
+  const checkMargin = (option) => {
+    if (option == 'rightMove') {
+      if (margin === '0') {
+        setMargin('-33.33%')
+      }
+      if (margin === '-33.33%') {
+        setMargin('-66.66%')
+      }
+    }
+
+    if (option == 'leftMove') {
+      if (margin === '-33.33%') {
+        setMargin('0')
+      }
+      if (margin === '-66.66%') {
+        setMargin('-33.33%')
+      }
+    }
+  }
 
   useEffect(() => {
 
-    var leftButtons = document.querySelectorAll('.leftButton');
-    var leftButtonsArr = Array.from(leftButtons);
-    console.log('leftButtonsArr', leftButtonsArr);
-
-    leftButtonsArr.map(item =>
-      item.addEventListener('click', () => {
-        if (firstStyle.marginLeft === '0%') {
-          setFirstStyle({ marginLeft: '-33.33%' })
-        }
-        if (firstStyle.marginLeft === '-33.33%') {
-          setFirstStyle({ marginLeft: '-66.66%' })
-        }
-      })
+    var rightButtons = Array.from(document.querySelectorAll('.rightButton'));
+    rightButtons.map(item =>
+      item.addEventListener('click', () => checkMargin('rightMove'))
     )
 
-  }, [])
+    var leftButtons = Array.from(document.querySelectorAll('.leftButton'))
+    leftButtons.map(item =>
+      item.addEventListener('click', () => checkMargin('leftMove'))
+    )
 
+  })
+
+  console.log('margin outside', margin);
 
 
 
@@ -63,7 +78,7 @@ const Examples = () => {
           {/* slides */}
           <div className='slides'>
 
-            <div className='slide first' style={firstStyle} >
+            <div className='slide first' style={{ marginLeft: `${margin}` }} >
               <img src='assets/galery-1.png' alt='' />
               <div className='info-box'>
                 <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
