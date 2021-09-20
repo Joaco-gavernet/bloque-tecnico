@@ -15,36 +15,35 @@
   .testimonies__text {
     @include font($font-xm, normal, none);
     margin-top: 3.125rem;
+    margin-bottom: 4.375rem;
   }
-
-  
-}
-
-.testimonies__boxes {
-  // width: 100%;
-  // overflow: hidden;
-  // @include flex(row, center, center);
-  // margin: 4.375rem 0;
-  // padding-left: 10rem !important;
 }
 
 .slide-content {
+  background-color: $color-claro;
+  color: $color-oscuro;
+  border-radius: 10px;
+  padding: 20px 3.125rem;
+  min-height: 400px;
+  @include flex(column, space-evenly, flex-start);
   // width: 510px !important;
-  // background-color: $color-claro;
-  // border-radius: 10px;
-  // padding: 20px 3.125rem;
-  // color: $color-oscuro;
   // margin-right: 20px;
 
-  &__text {
+  .boxes__text {
     @include font($font-m, normal, none);
+    margin-bottom: 5px;
   }
 
-  &__title {
-    @include font($font-xm, bold, none);
+  > div {
+    width: 100%;
+    @include flex(row, space-between, center);
   }
-}
 
-.boxes__slide {
-  width: 510px !important;
+  .boxes__title {
+    @include font($font-s, bold, none);
+    display: inline-block;
+  }
+
+  .boxes__logo {
+  }
 }

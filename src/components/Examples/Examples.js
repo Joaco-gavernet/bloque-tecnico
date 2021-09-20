@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 // Styles
@@ -6,6 +6,33 @@ import './Examples.scss';
 
 
 const Examples = () => {
+
+
+  const [firstStyle, setFirstStyle] = useState({ marginLeft: '0%' })
+
+
+  useEffect(() => {
+
+    var leftButtons = document.querySelectorAll('.leftButton');
+    var leftButtonsArr = Array.from(leftButtons);
+    console.log('leftButtonsArr', leftButtonsArr);
+
+    leftButtonsArr.map(item =>
+      item.addEventListener('click', () => {
+        if (firstStyle.marginLeft === '0%') {
+          setFirstStyle({ marginLeft: '-33.33%' })
+        }
+        if (firstStyle.marginLeft === '-33.33%') {
+          setFirstStyle({ marginLeft: '-66.66%' })
+        }
+      })
+    )
+
+  }, [])
+
+
+
+
   return (
     <section className='home__examples'>
       <h5 className='examples__title'>Con vasta experiencia y conocimientos en el área eléctrica sumamos horas trabajos realizados a lo largo de nuestra trayectoria</h5>
@@ -35,39 +62,43 @@ const Examples = () => {
         <div className='slide-view'>
           {/* slides */}
           <div className='slides'>
-            <div className='slide first'>
-              <img src='https://place-hold.it/510x380' alt='' />
+
+            <div className='slide first' style={firstStyle} >
+              <img src='assets/galery-1.png' alt='' />
               <div className='info-box'>
                 <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
                 <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
                 <div className='navigation-manual'>
-                  <img src='assets/left-row-inactive.png' alt='Flecha' />
-                  <img src='assets/right-row-inactive.png' alt='Flecha' />
+                  <img className='leftButton' src='assets/left-row-inactive.png' alt='Flecha' />
+                  <img className='rightButton' src='assets/right-row-active.png' alt='Flecha' />
                 </div>
               </div>
             </div>
+
             <div className='slide'>
-              <img src='https://place-hold.it/510x380' alt='' />
+              <img src='assets/galery-2.png' alt='' />
               <div className='info-box'>
-                <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
+                <h2 className='info-box__title'>Este es otro ejemplo</h2>
                 <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
                 <div className='navigation-manual'>
-                  <label htmlFor='radio1' className='manual-btn' />
-                  <label htmlFor='radio2' className='manual-btn' />
+                  <img className='leftButton' src='assets/left-row-active.png' alt='Flecha' />
+                  <img className='rightButton' src='assets/right-row-active.png' alt='Flecha' />
                 </div>
               </div>
             </div>
+
             <div className='slide'>
-              <img src='https://place-hold.it/510x380' alt='' />
+              <img src='assets/galery-3.png' alt='' />
               <div className='info-box'>
                 <h2 className='info-box__title'>Equipos Industriales 18 toneladas</h2>
                 <p className='info-box__text'>Revisión por salto de protección térmica. “Ventilador clavado”.</p>
                 <div className='navigation-manual'>
-                  <label htmlFor='radio1' className='manual-btn' />
-                  <label htmlFor='radio2' className='manual-btn' />
+                  <img className='leftButton' src='assets/left-row-active.png' alt='Flecha' />
+                  <img className='rightButton' src='assets/right-row-inactive.png' alt='Flecha' />
                 </div>
               </div>
             </div>
+
           </div>
           {/* end slides */}
         </div>
