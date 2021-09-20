@@ -1,0 +1,19 @@
+@import '../../scss/base.scss';
+
+.home {
+  position: relative;
+
+  .scrollUp {
+    max-width: 70px;
+    z-index: 2;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    opacity: 0;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+}

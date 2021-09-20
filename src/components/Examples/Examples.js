@@ -11,7 +11,7 @@ const Examples = () => {
   const [margin, setMargin] = useState('0');
 
   const checkMargin = (option) => {
-    if (option == 'rightMove') {
+    if (option === 'rightMove') {
       if (margin === '0') {
         setMargin('-33.33%')
       }
@@ -20,7 +20,7 @@ const Examples = () => {
       }
     }
 
-    if (option == 'leftMove') {
+    if (option === 'leftMove') {
       if (margin === '-33.33%') {
         setMargin('0')
       }
